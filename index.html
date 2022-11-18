@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prework Study Guide</title>
+    <link rel="stylesheet" href="./assets/style.css">
 
   </head>
 
@@ -25,7 +26,6 @@
       <section class="card" id="html-section">
 
         <h2>HTML</h2>
-        <br>
           <section>
             <ul>
               
@@ -38,118 +38,55 @@
             
             </ul>
           </section>
-
-              <br>
-            <section>
-              <ol>
+          <section>
+            <ul>
               
-                <li>The head element contains metadata that web browsers use to bring the webpage to the user.</li>
-                <li>The meta element defines the metadata such as: character set, description, keywords, and more.</li>
-                <li>The attribute charset="UTF-8" sets the character set to UTF-8 that allows the use of most characters and symbols.</li>
-                <li>The lang="en" attribute inside the html opening tag tells the browser the language for the webpage.</li>
+              <li>The head element contains metadata that web browsers use to bring the webpage to the user.</li>
+              <li>The meta element defines the metadata such as: character set, description, keywords, and more.</li>
+              <li>The attribute charset="UTF-8" sets the character set to UTF-8 that allows the use of most characters and symbols.</li>
+              <li>The lang="en" attribute inside the html opening tag tells the browser the language for the webpage.</li>
 
             
-              </ol>
-            </section>
-
-            <section>
-
-              <h2>This is what you'll see on the webpage</h2>
-              <p>Here, I used the p element to display a small descriptive text beneath the h2 element</p>
-
-            </section>  
+            </ul>
+          </section>
 
       </section>
-<hr>
-<hr>
-
-<!-- the following section demonstrates making forms(self-study)-->
-
-      <form action="" name="form">
-        <h2 id="title"></h2>
-        <p id="description"></p>
-
-        <label>Introduce yourself!
-
-          <br><br>
-          /*center-alignment for the page is aesthetically prefferable than having everything left-justified*/
-          <br><br>
-          /*sections of the form would ideally be nested in div elements to make it easier to style in CSS with class selectors*/ 
-          <br><br>
-
-          <label for="first-name" name="form" id="first-name">First Name:
-            <input type="text" name="form" id="first-name" placeholder="Sherlock"  required>
-          </label>
-          <br>
-          <label for="last-name" name="form" id="last-name">Last Name: 
-            <input type="text" name="form" id="last-name"  placeholder="Holmes" required></label>
-            <br>
-          <label for="email" name="form" id="email">Email: 
-            <input type="email" name="form" id="email" placeholder="sherHolmes@lock.com" required></label>
-
-            <br><br>
-            //style with CSS to align above inputs and spread them out
-            <br><br>
-        </label>
-        <hr>
-        <label for="choose" name="form" id="choose">Chose one of these radio buttons:
-          <br>
-          <label for="one" name="form" id="one">
-            <input type="radio" name="form" id="one" value="one">One
-          </label>
-          <label for="two" name="form" id="two">Two
-            <input type="radio" name="form" id="two" value="two">
-          </label>
-          <label for="three" name="form" id="three">
-            <input type="radio" name="form" id="three" value="three">Three
-          </label>
-        </label>
-        <br>
-        <hr>
-        <label for="all-or-not" name="form" id="all-or-not">(Check All That Apply)
-          <label for="check" name="form" id="check1">1<input type="checkbox" name="form" id="check1"></label>
-          <label for="check" name="form" id="check"><input type="checkbox" name="form" id="check2">2</label>
-          <label for="check" name="form" id="check">3<input type="checkbox" name="form" id="check3"></label>
-          <label for="check" name="form" id="check">4<input type="checkbox" name="form" id="check4"></label>
-          <label for="check" name="form" id="check"><input type="checkbox" name="form" id="check5">5</label>
-          <label for="check" name="form" id="check"><input type="checkbox" name="form" id="check6">6</label>
-          <label for="check" name="form" id="check"><input type="checkbox" name="form" id="check7">7</label>
-          <label for="check" name="form" id="check"><input type="checkbox" name="form" id="check8">8</label>
-        </label>
-<br>
-<br>
-        <label for="select" name="form" id="select">Select one of the following <br> 
-          <select name="form" id="dropdown">
-            <optgroup name="form" id="only-two">
-              <option disabled name="form" id="select" value="select">(select one)</option>
-              <option disabled name="form" id="not-this" value="1">1</option>
-              <option disabled name="form" id="not-this" value="2">2</option>
-              <option disabled value="3">3</option>
-              <option value="this">4</option>
-              <option value="this2">5</option>
-            </optgroup>
-            <optgroup name="form" id="all">
-              <option disabled name="form" id="select" value="select">(select one)</option>
-              <option name="form" id="1" value="1">1</option>
-              <option name="form" id="2" value="2">2</option>
-              <option name="form" id="3" value="3">3</option>
-              <option name="form" id="4" value="4">4</option>
-            </optgroup>
-          </select>
-        </label>
-        <hr>
-        <label for="comments" name="form" id="comments">Type text in the box below <br>
-          <textarea name="form" id="comments" cols="50" rows="10" placeholder="Type text here... styling with CSS is a non-issue at this point for me.. but the way it is formatted is intentional to demonstrate behavior without CSS applied."></textarea>
-        </label>
-        <br>
-        <input type="submit" value="submit" name="form" id="submit">
-      </form>
-<hr><hr><hr>
 
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>most common way to style a webpage is by using an external CSS style sheet</li>
+          <li>link file using link element in HTML's head element</li>
+          <li>selector defines the element or attributes to which the declarations apply</li>
+          <li>Declarations in CSS are totally different than declarations in HTML 
+            <ul>
+              <li>Declarations consist of two parts:
+                <ul>
+                  <li>CSS property</li>
+                  <li>Property's value</li>
+                </ul>
+                <li>Example of CSS rule: <br> .card { <br>
+                  text-align: center; <br>
+                  font-size: 30px;<br>
+                 } </li>
+              </li>
+            </ul>
+          </li>
+          <li>The period preceding a selector designates this as a class selector. Any HTML element assigned to the class, will gain these property assignments from the CSS.</li>
+          <li><em> box-shadow</em> is a CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas.
+            <ul>
+              <li>described by X and Y offsets relative to the element</li>
+              <li> blur and spread radius (not defined here, more later)</li>
+              <li>color</li>
+            </ul>
+          </li>
+          <li>Assigning colors in CSS can be done in many ways, including by semantic references 
+            <ul>
+              <li>can also refer to a color by its hexadecimal code</li>
+            </ul>
+          </li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element.</li>
         </ul>
       </section>
 
