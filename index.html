@@ -93,8 +93,33 @@
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
+          <li><em>touch</em> filename.filetype: to create a file in the current working directory</li>
+          <li><em>mv</em> [file.txt] [directory_path]: to move a file or folder to any directory</li>
+          <ul>
+            <li><em>mv file1.txt file2.txt</em>: to rename a file since that operation is a special case of moving it</li>
+          </ul>
+          <li><em>pwd</em>: print working directory</li>
+          <li><em>ls</em>: list all files and folders in the current directory</li>
+          <li><em>cd</em> directory/path: change current working directory to specified directory/path</li>
+          <li><em>mkdir</em> [directory_path/file]: to create new directory</li>
+          <li><em>rm</em> [directory_path/file]: to delete specific files from directories </li>
+          <ul>
+            <li><em>-r -R --recursive</em>: to delete populated directories</li>
+          </ul>
           <li>git status: checks current branch</li>
+          <li>git log: checks current branch's history</li>
+            <ul>
+              <li>it's a good idea to be in the habit of checking status and history often</li>
+            </ul>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li><em>git pull</em>: fetch and merge commits from remote branch to local branch</li>
+          <li><em>git push</em>: transmit local branch commits to rempte repo branch</li>
+          <li><em>git branch --move </em>bad-branch-name corrected-branch-name: replaces your bad-branch-name with <br> corrected-branch-name, but this change is only local for now.</li>
+            <ul> 
+              <li><em>git push --set-upstream origin </em> corrected-branch-name: to push changes; let others see the corrected branch on the remote, </li>
+              <li><em>git push origin --delete</em> bad-branch-name: to delete branch with bad name that's still present with <em>git branch --all</em></li>
+              <li><em>git branch --all</em>: to list all your branches; a * will appear next to the currently active branch</li>
+            </ul>
         </ul>
       </section>
 
